@@ -1,0 +1,57 @@
+[
+{
+	"uri": "/vi/",
+	"title": "Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác ",
+	"tags": [],
+	"description": "",
+	"content": "Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác Tổng quan Trong bài lab này, bạn sẽ học cách lưu lại các file trên Amazon S3 và cách chia sẻ chúng cho người khác.\nNội dung Giới thiệu Tạo mới một S3 bucket Đưa file lên S3 Cấu hình để các file được công khai Dọn dẹp tài nguyên "
+},
+{
+	"uri": "/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ đối tượng cung cấp khả năng mở rộng, khả dụng của dữ liệu, bảo mật và thực hiện.\nĐặc trưng của Amazon S3:\nCác lớp lưu trữ (Storage classes): Amazon S3 cung cấp các lớp lưu trữ được thiết kế cho các trường hợp sử dụng khác nhau. Quản lý lưu trữ: dùng để quản lý chi phí, đáp ứng các yêu cầu quy định, giảm độ trễ và lưu nhiều bản sao dữ liệu riêng biệt cho các yêu cầu về tuân thủ. Quản lý truy cập: Theo mặc định, các S3 bucket và các đối tượng lưu trong S3 bucket là riêng tư. Bạn chỉ có quyền truy cập vào các tài nguyên S3 mà bạn tạo ra. Quá trình chuyển đổi dữ liệu (Data processing) Giám sát và ghi nhật ký lưu trữ Phân tích và nhận thức sâu sắc (Analytics and insights) A bucket policy là một chính sách dựa trên tài nguyên AWS Identity and Access Management (IAM) mà bạn có thể sử dụng để cấp quyền truy cập vào bucket và các đối tượng trong bucket đó. Chỉ chủ sở hữu (owner) của bucket mới có thể liên kết chính sách với bucket. Các quyền được gắn với bucket được áp dụng cho tất cả các đối tượng trong bucket đó.\n"
+},
+{
+	"uri": "/vi/2-create_a_s3_bucket/",
+	"title": "Tạo một S3 bucket",
+	"tags": [],
+	"description": "",
+	"content": " Mở một cửa sổ trình duyệt mới, bạn truy cập vào AWS Management Console, đăng nhập với user name và mật khẩu của bạn. Kế đến, trên thanh tìm kiếm, gõ S3 và chọn S3 để khởi chạy giao diện điều khiển S3. Tại giao diện điều khiển S3, bạn click vào nút Create bucket. Tại giao diện Create bucket: Bucket name: Bạn nhập tên của bucket. AWS Region: chọn một region để tạo bucket của bạn. Tên của bucket phải là duy nhất trên tất cả các tên bucket hiện có trong Amazon S3. Xem các quy tắc áp dụng cho việc đặt tên bucket trong Amazon S3\nVới các tuỳ chọn khác, bạn chọn theo giá trị mặc định rồi chọn Create bucket .\n"
+},
+{
+	"uri": "/vi/3-upload_content/",
+	"title": "Đưa file lên S3",
+	"tags": [],
+	"description": "",
+	"content": "Ở bước này, bạn sẽ tải file lên Amazon S3 bucket vừa mới tạo.\nBạn sẽ thấy bucket mới tạo của bạn ở bảng điều khiển S3. Nhấp vào tên bucket. Trong trang quản lý bucket, bạn chọn Upload. Để tải file lên S3 bucket, cần nhấn vào Add files hoặc Add folder và chọn các file mẫu bạn muốn lưu trữ, hay Kéo và Thả file vào trong hộp tải lên. Sau khi đã chọn các file muốn tải lên, các file của bạn sẽ được hiển thị. Bạn có thể thiết lập các cài đặt thuộc tính như storage class, server-side encryption, additional checksums, tags, và metadata cho đối tượng được tải lên. Trong bài lab này, bạn để các giá trị mặc định và chọn Upload. Bạn sẽ thấy các đối tượng mới được tải lên trong trang quản lý bucket. "
+},
+{
+	"uri": "/vi/4-make_content_public/",
+	"title": "Cấu hình để các file được công khai",
+	"tags": [],
+	"description": "",
+	"content": "Theo mặc định, các S3 bucket và đối tượng chứa trong chúng là riêng tư. Trong bước này, bạn sẽ cấu hình để tất cả mọi người có thể đọc và tải các đối tượng trong S3 bucket.\nChọn một file bất kỳ trong bucket của bạn. Ở giao diện của đối tượng,bạn copy object URL. Mở một cửa sổ trình duyệt mới (incognito - ẩn danh), dán object URL, và nhấn enter. Bạn không có quyền xem nội dung của đối tượng. Ở trang chủ của S3 bucket, bạn chọn tab Permission. Ở Block public access (bucket settings), bạn nhấn nút Edit. rồi bỏ chọn Block all public access.\nĐiền confirm và nhấn nút Confirm .\nBạn đã tắt thiết lập Block all public access. Kế tiếp, ở Bucket policy, bạn nhấn vào nút Edit . Copy và dán chính sách bên dưới vào trong khung statement của Bucket policy. Bạn thay thế your-name-bucket với tên bucket của bạn.\n{\r\u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;,\r\u0026#34;Statement\u0026#34;: [\r{\r\u0026#34;Sid\u0026#34;: \u0026#34;PublicRead\u0026#34;,\r\u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;,\r\u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;,\r\u0026#34;Action\u0026#34;: [\r\u0026#34;s3:GetObject\u0026#34;,\r\u0026#34;s3:GetObjectVersion\u0026#34;\r],\r\u0026#34;Resource\u0026#34;: [\r\u0026#34;arn:aws:s3:::\u0026lt;your-name-bucket\u0026gt;/*\u0026#34;\r]\r}\r]\r} Nhấn Save changes. Mở cửa số trình duyệt mới (incognito - ẩn danh), nhập object url và nhấn enter. Bạn đã có thể xem nội dung của đối tượng. "
+},
+{
+	"uri": "/vi/5-clean_up/",
+	"title": "Dọn dẹp tài nguyên  ",
+	"tags": [],
+	"description": "",
+	"content": " Mở bảng quản lý dịch vụ S3, chọn bucket của bạn và nhấn nút Empty. Nhập permanently delete và nhấn nút Empty. Bạn chọn bucket và nhấn nút Delete. Nhập tên bucket của bạn và nhấn nút Delete bucket. "
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

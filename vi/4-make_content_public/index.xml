@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cấu hình để các file được công khai on Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác</title>
+    <link>/vi/4-make_content_public/</link>
+    <description>Recent content in Cấu hình để các file được công khai on Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/4-make_content_public/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
