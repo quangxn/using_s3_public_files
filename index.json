@@ -1,55 +1,55 @@
 [
 {
-	"uri": "/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/",
 	"title": "Using Amazon S3 for file storage and public sharing",
 	"tags": [],
 	"description": "",
 	"content": "Using Amazon S3 for file storage and public sharing Overall You will learn how to save files and share them socially with others in this lab.\nContent Introduction Create a S3 bucket Upload content Make content public Clean up resources "
 },
 {
-	"uri": "/1-introduce/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Overview Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.\nFeatures of Amazon S3:\nStorage classes: Amazon S3 offers a range of storage classes designed for different use cases. Storage management: you can use to manage costs, meet regulatory requirements, reduce latency, and save multiple distinct copies of your data for compliance requirements. Access management: By default, S3 buckets and the objects in them are private. You have access only to the S3 resources that you create. Data processing Storage logging and monitoring Analytics and insights A bucket policy is a resource-based AWS Identity and Access Management (IAM) policy that you can use to grant access permissions to your bucket and the objects in it. Only the bucket owner can associate a policy with a bucket. The permissions attached to the bucket apply to all of the objects in the bucket that are owned by the bucket owner.\n"
 },
 {
-	"uri": "/2-create_a_s3_bucket/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/2-create_a_s3_bucket/",
 	"title": "Create a S3 bucket",
 	"tags": [],
 	"description": "",
 	"content": " You launch the AWS Management Console in a new browser window and enter your user name and password when asked. Then, in the search bar, type S3 and choose S3 to launch the console. In the S3 dashboard, you click the Create bucket button. In the Create bucket interface: Bucket name: You enter a bucket name. AWS Region: select a region to create your bucket in. Bucket names must be unique across all existing bucket names in Amazon S3. The following rules apply for naming buckets in Amazon S3 Other options provide exiting the default values and selecting Create bucket.\n"
 },
 {
-	"uri": "/3-upload_content/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/3-upload_content/",
 	"title": "Upload content",
 	"tags": [],
 	"description": "",
 	"content": "In this step, you will upload file(s) to your new Amazon S3 bucket.\nYou will see your new bucket in the S3 console. Click on your bucket’s name to navigate to the bucket. In your bucket\u0026rsquo;s home page, you select Upload. To upload a file, either click Add files or Add folder and select the sample file(s) you want to store, or Drag and Drop a file into the upload box. Following the selection of file(s) to upload, your file(s) will be displayed. You have the ability to set property settings like storage class, server-side encryption, additional checksums, tags, and metadata with your object. In this lab, leave the default values and select Upload. You will see your object(s) in your bucket’s home screen. "
 },
 {
-	"uri": "/4-make_content_public/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/4-make_content_public/",
 	"title": "Make content public",
 	"tags": [],
 	"description": "",
 	"content": "S3 buckets and the objects contained within them are private by default. In this step, you make them available to everyone for reading and downloading.\nYou select a file from your bucket. In the Object interface, you copy the object URL. Open a new browser window (incognito window), paste the object URL, and press enter. You cannot see the object\u0026rsquo;s content. In the S3 bucket\u0026rsquo;s home page, you choose Permission tab. At Block public access (bucket settings), you click the Edit button. and uncheck Block all public access.\nFill confirm in the field and press the Confirm button.\nYou turned off the bucket\u0026rsquo;s block public access settings. Next step, at Bucket policy, you click the Edit button. Copy and paste this policy into the statement input. You replace your-name-bucket with the name of your bucket.\n{\r\u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;,\r\u0026#34;Statement\u0026#34;: [\r{\r\u0026#34;Sid\u0026#34;: \u0026#34;PublicRead\u0026#34;,\r\u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;,\r\u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;,\r\u0026#34;Action\u0026#34;: [\r\u0026#34;s3:GetObject\u0026#34;,\r\u0026#34;s3:GetObjectVersion\u0026#34;\r],\r\u0026#34;Resource\u0026#34;: [\r\u0026#34;arn:aws:s3:::\u0026lt;your-name-bucket\u0026gt;/*\u0026#34;\r]\r}\r]\r} Press Save changes.\nOpen a new browser window (incognito window), insert the object URL, and hit enter. You will be able to see the object\u0026rsquo;s content. "
 },
 {
-	"uri": "/5-clean_up/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/5-clean_up/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": " Open the S3 service management console, you select your bucket and press Empty button. Type permanently delete and press the Empty button. You select your bucket and press Delete button. Type your name bucket and press the Delete bucket button. "
 },
 {
-	"uri": "/categories/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "https://quangxn.github.io/using_s3_publifile/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

@@ -2,102 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/</loc>
     <lastmod>1970-01-01T08:33:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://quangxn.github.io/using_s3_publifile/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="https://quangxn.github.io/using_s3_publifile/1-introduce/"
                 />
   </url><url>
-    <loc>/2-create_a_s3_bucket/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/2-create_a_s3_bucket/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-create_a_s3_bucket/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/2-create_a_s3_bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-create_a_s3_bucket/"
+                href="https://quangxn.github.io/using_s3_publifile/2-create_a_s3_bucket/"
                 />
   </url><url>
-    <loc>/3-upload_content/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/3-upload_content/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-upload_content/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/3-upload_content/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-upload_content/"
+                href="https://quangxn.github.io/using_s3_publifile/3-upload_content/"
                 />
   </url><url>
-    <loc>/4-make_content_public/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/4-make_content_public/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-make_content_public/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/4-make_content_public/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-make_content_public/"
+                href="https://quangxn.github.io/using_s3_publifile/4-make_content_public/"
                 />
   </url><url>
-    <loc>/5-clean_up/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/5-clean_up/</loc>
     <lastmod>1970-01-01T08:33:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-clean_up/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/5-clean_up/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-clean_up/"
+                href="https://quangxn.github.io/using_s3_publifile/5-clean_up/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://quangxn.github.io/using_s3_publifile/categories/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://quangxn.github.io/using_s3_publifile/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://quangxn.github.io/using_s3_publifile/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://quangxn.github.io/using_s3_publifile/tags/"
                 />
   </url>
 </urlset>
