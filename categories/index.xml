@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Using S3 for file storage and public sharing</title>
-    <link>https://quangxn.github.io/using_s3_publifile/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Using S3 for file storage and public sharing</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://quangxn.github.io/using_s3_publifile/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

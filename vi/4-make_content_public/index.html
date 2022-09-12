@@ -4,29 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0" />
-    <meta name="description" content="Using S3 for file storage and public sharing">
+    <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/using_s3_publifile/images/favicon.png" type="image/png">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
 
     <title>Cấu hình để các file được công khai :: Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác</title>
 
     
-    <link href="/using_s3_publifile/css/nucleus.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/fontawesome-all.min.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/hybrid.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/featherlight.min.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/perfect-scrollbar.min.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/auto-complete.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/atom-one-dark-reasonable.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/theme.css?1662953149" rel="stylesheet">
-    <link href="/using_s3_publifile/css/hugo-theme.css?1662953149" rel="stylesheet">
+    <link href="/css/nucleus.css?1662954160" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1662954160" rel="stylesheet">
+    <link href="/css/hybrid.css?1662954160" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1662954160" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1662954160" rel="stylesheet">
+    <link href="/css/auto-complete.css?1662954160" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1662954160" rel="stylesheet">
+    <link href="/css/theme.css?1662954160" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1662954160" rel="stylesheet">
     
-    <link href="/using_s3_publifile/css/theme-workshop.css?1662953149" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1662954160" rel="stylesheet">
     
     
 
-    <script src="/using_s3_publifile/js/jquery-3.3.1.min.js?1662953149"></script>
+    <script src="/js/jquery-3.3.1.min.js?1662954160"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/using_s3_publifile/vi/4-make_content_public/">
+  <body class="" data-url="/vi/4-make_content_public/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/using_s3_publifile/js/lunr.min.js?1662953149"></script>
-<script type="text/javascript" src="/using_s3_publifile/js/auto-complete.js?1662953149"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1662954160"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1662954160"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/quangxn.github.io\/using_s3_publifile\/\/vi";
+        var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/using_s3_publifile/js/search.js?1662953149"></script>
+<script type="text/javascript" src="/js/search.js?1662954160"></script>
 
     
   </div>
@@ -82,12 +82,12 @@
  
   
     
-    <li data-nav-id="/using_s3_publifile/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/using_s3_publifile/vi/1-introduce/">
+      <a href="/vi/1-introduce/">
            <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
@@ -108,12 +108,12 @@
  
   
     
-    <li data-nav-id="/using_s3_publifile/vi/2-create_a_s3_bucket/" title="Tạo một S3 bucket" class="dd-item 
+    <li data-nav-id="/vi/2-create_a_s3_bucket/" title="Tạo một S3 bucket" class="dd-item 
         
         
         
         ">
-      <a href="/using_s3_publifile/vi/2-create_a_s3_bucket/">
+      <a href="/vi/2-create_a_s3_bucket/">
            <b> 2. </b> Tạo một S3 bucket
           
             <i class="fas fa-check read-icon"></i>
@@ -134,12 +134,12 @@
  
   
     
-    <li data-nav-id="/using_s3_publifile/vi/3-upload_content/" title="Đưa file lên S3" class="dd-item 
+    <li data-nav-id="/vi/3-upload_content/" title="Đưa file lên S3" class="dd-item 
         
         
         
         ">
-      <a href="/using_s3_publifile/vi/3-upload_content/">
+      <a href="/vi/3-upload_content/">
            <b> 3. </b> Đưa file lên S3
           
             <i class="fas fa-check read-icon"></i>
@@ -160,12 +160,12 @@
  
   
     
-    <li data-nav-id="/using_s3_publifile/vi/4-make_content_public/" title="Cấu hình để các file được công khai" class="dd-item 
+    <li data-nav-id="/vi/4-make_content_public/" title="Cấu hình để các file được công khai" class="dd-item 
         
         active
         
         ">
-      <a href="/using_s3_publifile/vi/4-make_content_public/">
+      <a href="/vi/4-make_content_public/">
            <b> 4. </b> Cấu hình để các file được công khai
           
             <i class="fas fa-check read-icon"></i>
@@ -186,12 +186,12 @@
  
   
     
-    <li data-nav-id="/using_s3_publifile/vi/5-clean_up/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/vi/5-clean_up/" title="Dọn dẹp tài nguyên  " class="dd-item 
         
         
         
         ">
-      <a href="/using_s3_publifile/vi/5-clean_up/">
+      <a href="/vi/5-clean_up/">
           <b>5. </b>Dọn dẹp tài nguyên  
           
             <i class="fas fa-check read-icon"></i>
@@ -239,7 +239,7 @@
                   
                     
                     
-                      <option id="en" value="https://quangxn.github.io/using_s3_publifile/4-make_content_public/">English</option>
+                      <option id="en" value="/4-make_content_public/">English</option>
                     
                   
               
@@ -253,7 +253,7 @@
                   
                     
                     
-                      <option id="vi" value="https://quangxn.github.io/using_s3_publifile/vi/4-make_content_public/" selected>Tiếng Việt</option>
+                      <option id="vi" value="/vi/4-make_content_public/" selected>Tiếng Việt</option>
                     
                   
               
@@ -320,17 +320,6 @@
               <div>
                 <div id="top-bar">
                 
-                  
-                  
-                  
-                  <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://quangxn.github.io/using_s3_publifile/4-Make_content_public/_index.vi.md" target="blank">
-                      <i class="fas fa-code-branch"></i>
-                      <span id="top-github-link-text">Edit this page</span>
-                    </a>
-                  </div>
-                  
-                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -351,7 +340,7 @@
             
           
           
-            <a href='/using_s3_publifile/vi/'>Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác </a> > Cấu hình để các file được công khai
+            <a href='/vi/'>Sử dụng Amazon S3 để lưu trữ file và chia sẻ công khai đến người khác </a> > Cấu hình để các file được công khai
           
         
           
@@ -574,10 +563,10 @@ Kế tiếp, ở Bucket policy, bạn nhấn vào nút <strong>Edit</strong> .</
 	 
 	 
 		
-			<a class="nav nav-prev" href="/using_s3_publifile/vi/3-upload_content/" title="Đưa file lên S3"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/3-upload_content/" title="Đưa file lên S3"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/using_s3_publifile/vi/5-clean_up/" title="Dọn dẹp tài nguyên  " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/5-clean_up/" title="Dọn dẹp tài nguyên  " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -587,19 +576,19 @@ Kế tiếp, ở Bucket policy, bạn nhấn vào nút <strong>Edit</strong> .</
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/using_s3_publifile/js/clipboard.min.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/perfect-scrollbar.min.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/perfect-scrollbar.jquery.min.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/jquery.sticky.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/featherlight.min.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/highlight.pack.js?1662953149"></script>
+    <script src="/js/clipboard.min.js?1662954160"></script>
+    <script src="/js/perfect-scrollbar.min.js?1662954160"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1662954160"></script>
+    <script src="/js/jquery.sticky.js?1662954160"></script>
+    <script src="/js/featherlight.min.js?1662954160"></script>
+    <script src="/js/highlight.pack.js?1662954160"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/using_s3_publifile/js/modernizr.custom-3.6.0.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/learn.js?1662953149"></script>
-    <script src="/using_s3_publifile/js/hugo-learn.js?1662953149"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1662954160"></script>
+    <script src="/js/learn.js?1662954160"></script>
+    <script src="/js/hugo-learn.js?1662954160"></script>
 
-    <link href="/using_s3_publifile/mermaid/mermaid.css?1662953149" rel="stylesheet" />
-    <script src="/using_s3_publifile/mermaid/mermaid.js?1662953149"></script>
+    <link href="/mermaid/mermaid.css?1662954160" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1662954160"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
